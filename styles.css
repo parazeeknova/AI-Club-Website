@@ -131,10 +131,56 @@ header {
     background-image: url('resources/background.gif');
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     height: 100vh;
 }
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+}
+
+.left-content {
+    max-width: 50%; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: flex-start; 
+    padding: 2em;
+}
+
+.marquee-container {
+    display: flex;
+    height: 1.2em;
+    justify-content: ce;
+    align-items: center;
+    font-family: 'Lora', sans-serif;
+    padding: 5em;
+    animation: marquee 15s linear infinite;
+}
+
+.text-content {
+    max-width: 40%;
+}
+
+.text-content h1 {
+    font-weight: bold;
+    font-size: 2.5em;
+    color: #95939A;
+}
+
+.text-content p {
+    font-size: 0.9em;
+    color: #95939A;
+}
+
+.ai-logo {
+    max-height: 50vh; 
+    max-width: 45%; 
 }
 
 @keyframes fadeIn {
