@@ -57,19 +57,13 @@ html, body {
     scroll-behavior: smooth;
 }
 
-#college-logo {
+#college-logo, #club-logo{
     position: sticky;
     left: 12px;
     top: 25px;
     height: 50px;
 }
 
-#club-logo {
-    position: sticky;
-    right: 12px;
-    top: 25px; 
-    height: 50px;
-}
 
 nav {
     position: relative;
@@ -142,25 +136,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 2em;
-}
-
-.left-content {
-    max-width: 50%; 
-    display: flex;
-    flex-direction: column; 
-    justify-content: space-between;
-    align-items: flex-start; 
-    padding: 2em;
-}
-
-.marquee-container {
-    display: flex;
-    height: 1.2em;
-    justify-content: ce;
-    align-items: center;
-    font-family: 'Lora', sans-serif;
-    padding: 5em;
-    animation: marquee 15s linear infinite;
+    height: 100vh;
+    box-sizing: border-box;
 }
 
 .text-content {
@@ -178,9 +155,19 @@ header {
     color: #95939A;
 }
 
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    padding: auto;
+
+}
+
 .ai-logo {
     max-height: 50vh; 
     max-width: 45%; 
+    padding: 2em;
 }
 
 @keyframes fadeIn {
