@@ -82,7 +82,7 @@ nav ul{
     color: #fff;
     border-radius: 10px; 
     backdrop-filter: blur(20px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); /* Modern look */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 
@@ -118,6 +118,73 @@ nav ul li a:hover {
 nav ul li a:active {
     background-color: #483a58;
     color: #000;
+}
+
+#menu {
+    display: none;
+}
+
+#menuToggle {
+    display: none; 
+    position: relative; 
+    top: 5px;
+    left: 3px; 
+}
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0; 
+    z-index: 2;
+}
+
+#menuToggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #95939A;
+    background-color: #2e2a3e;
+    border-radius: 2px;
+    z-index: 1;
+}
+
+#menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menuToggle input:checked ~ ul{
+    display: block;
+}
+
+#menuToggle input:checked ~ li {
+    padding: 100px 0;
+}
+
+@media (max-width: 600px) {
+
+    #menuToggle {
+        display: block;
+    }
+
+    .navm {
+        display: none;
+    }
 }
 
 header {
@@ -246,6 +313,12 @@ header {
     margin-left: 30px;
     margin-right: 30px;
     max-width: 40;
+}
+
+@media (max-width: 600px) {
+    .events-tab {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
 }
 
 .events-tab {
