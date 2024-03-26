@@ -1,5 +1,5 @@
 # AI Club's Website
-This project is associated with the AI Club at VIT University. It is a website built using HTML5 and CSS3, and it is designed to be responsive. \
+This project is associated with the AI Club at VIT University. It is a website built using HTML5 and CSS3 within 12 hours, and it is designed to be responsive. \
 **Check it out using this** [**link**](https://parazeeknova.github.io/AI-Club-Website/)
 
 ## 📸 Screenshots
